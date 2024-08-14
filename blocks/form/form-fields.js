@@ -12,7 +12,7 @@ function createFieldWrapper(fd) {
 
 const ids = [];
 function generateFieldId(fd, suffix = '') {
-  //const slug = toClassName(`form-${fd.Name}${suffix}`);
+  // const slug = toClassName(`form-${fd.Name}${suffix}`);
   const slug = toClassName(`form-${fd.Label}${suffix}`);
   ids[slug] = ids[slug] || 0;
   const idSuffix = ids[slug] ? `-${ids[slug]}` : '';
