@@ -21,16 +21,19 @@ function createPagination(totalPages, container, data) {
   const paginationContainer = document.createElement('div');
   paginationContainer.className = 'pagination-controls';
 
-  for (let i = 1; i <= totalPages; i++) {
+  for (let i = 1; i <= totalPages;) {
     const button = document.createElement('button');
     button.textContent = i;
+    /* eslint-disable no-loop-func */
     button.addEventListener('click', () => {
       currentPage = i;
       container.innerHTML = '';
+
       container.appendChild(renderList(data, currentPage));
       createPagination(totalPages, container, data);
     });
     paginationContainer.appendChild(button);
+    i += 1;
   }
 
   container.appendChild(paginationContainer);
@@ -39,6 +42,7 @@ export default async function decorate(block) {
   const link = block.querySelector('a');
   const path = link ? link.getAttribute('href') : block.textContent.trim();
 
+  /* eslint-disable no-unused-vars */
   const spreadSheetResponse = fetch(`${path}`).then((response) => response.json()).then((resp) => {
     const { data } = resp;
     const totalPages = Math.ceil(data.length / itemsPerPage);
