@@ -51,5 +51,8 @@ export default async function decorate(block) {
     if (totalPages > 1) {
       createPagination(totalPages, block, data);
     }
-  }).catch((error) => console.error('Error fetching data:', error));
+  }).catch((error) => {
+    // eslint-disable-next-line no-console
+    console.error('Error fetching data:', error);
+  });
 }
