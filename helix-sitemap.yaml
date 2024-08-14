@@ -1,7 +1,5 @@
-version: 1
 sitemaps:
-  default:
-    origin: https://main--eds-enablement-site--singhpritam18.hlx.page
+  example:
     source: query-index.json
     destination: /sitemap.xml
     lastmod: YYYY-MM-DD
