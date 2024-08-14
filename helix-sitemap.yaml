@@ -1,5 +1,5 @@
 sitemaps:
   default:
     origin: https://main--eds-enablement-site--singhpritam18.hlx.page
-    source: query-index.json
+    source: /query-index.json
     destination: /sitemap.xml
