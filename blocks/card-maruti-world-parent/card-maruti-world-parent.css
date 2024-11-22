@@ -1,0 +1,95 @@
+.card-maruti-world-parent {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+}
+
+.card-maruti-world-parent-cards {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.card-maruti-world-parent-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  min-width: 33.33%; /* 100% / 3 cards */
+  box-sizing: border-box;
+}
+
+.card-maruti-world-parent-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-maruti-world-parent-card h3 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.card-maruti-world-parent-card p {
+  font-size: 16px;
+  color: #777;
+}
+
+.card-maruti-world-parent-card h4 {
+  font-size: 18px;
+  color: #007bff;
+  margin: 10px 0;
+}
+
+.owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.owl-nav button {
+  background: rgba(0, 0, 0, 0.3);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.owl-nav button:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Variation for maruti-world-parent-variation */
+.maruti-world-parent-variation.card-maruti-world-parent .card-maruti-world-parent-card {
+  border: 2px solid #00796b;
+}
+
+.maruti-world-parent-variation.card-maruti-world-parent .card-maruti-world-parent-card h3 {
+  color: #004d40;
+}
+
+.maruti-world-parent-variation.card-maruti-world-parent .card-maruti-world-parent-card p {
+  color: #004d40;
+}
+
+.maruti-world-parent-variation.card-maruti-world-parent .card-maruti-world-parent-card h4 {
+  color: #004d40;
+}
+
+.maruti-world-parent-variation.card-maruti-world-parent .card-maruti-world-parent-card img {
+  border-radius: 0;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+}

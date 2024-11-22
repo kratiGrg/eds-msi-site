@@ -1,0 +1,90 @@
+.maruti-carousel {
+  background: var(--background-color);
+  padding: 20px;
+}
+
+.maruti-carousel-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.maruti-carousel-image {
+  max-width: 100%;
+  height: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.maruti-carousel-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.owl-dots button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  border: none;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.owl-dots button.active,
+.owl-dots button:hover {
+  background: var(--link-color);
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-m);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .maruti-carousel {
+    padding: 10px;
+  }
+
+  .maruti-carousel-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .maruti-carousel-image {
+    width: 100%;
+  }
+
+  .carousel-caption {
+    position: static;
+    background-color: transparent;
+    color: var(--dark-color);
+    padding: 0;
+  }
+
+  .owl-dots {
+    justify-content: center;
+    padding: 5px 0;
+  }
+
+  .owl-dots button {
+    width: 8px;
+    height: 8px;
+  }
+}

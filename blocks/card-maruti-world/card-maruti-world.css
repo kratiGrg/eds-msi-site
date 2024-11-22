@@ -1,0 +1,118 @@
+.card-maruti-world-wrapper {
+  width: 100%;
+}
+
+.card-maruti-world {
+  font-family: Arial, sans-serif;
+  color: #333;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-maruti-world-title {
+  font-size: 24px;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-maruti-world-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.card-maruti-world-card {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-right: 16px;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card-maruti-world-card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-maruti-world-card-title {
+  font-size: 18px;
+  color: #004b8d;
+  margin: 15px;
+}
+
+.card-maruti-world-card-description {
+  font-size: 14px;
+  margin: 0 15px 15px;
+}
+
+.card-maruti-world-card-link {
+  display: block;
+  font-size: 14px;
+  color: #004b8d;
+  margin: 0 15px 10px;
+  text-decoration: none;
+}
+
+.card-maruti-world-card-link:hover {
+  text-decoration: underline;
+}
+
+.card-maruti-world-card-date {
+  font-size: 12px;
+  color: #999;
+  margin: 0 15px 15px;
+  display: block;
+}
+
+.card-maruti-world-view-all {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 14px;
+  color: #fff;
+  background: #004b8d;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+.card-maruti-world-view-all:hover {
+  background: #003366;
+}
+
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 0;
+}
+
+.next-button {
+  right: 0;
+}
+
+@media (max-width: 900px) {
+  .card-maruti-world-card {
+    flex: 0 0 48%;
+    max-width: 48%;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-maruti-world-card {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,54 @@
+.accordion {
+  background: var(--background-color);
+}
+
+.accordion .accordion-card {
+  border: 1px solid var(--light-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.accordion .accordion-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--light-color);
+  border: none;
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-s);
+  color: var(--link-color);
+  cursor: pointer;
+}
+
+.accordion .accordion-header .icon {
+  font-family: var(--heading-font-family);
+  font-size: var(--heading-font-size-s);
+  color: var(--link-color);
+}
+
+.accordion .accordion-content {
+  padding: 16px;
+  display: none;
+  font-family: var(--body-font-family);
+  font-size: var(--body-font-size-s);
+  color: var(--text-color);
+}
+
+.accordion .accordion-content[aria-hidden="false"] {
+  display: block;
+}
+
+@media (min-width: 900px) {
+  .accordion .accordion-header {
+    font-size: var(--heading-font-size-xs);
+  }
+
+  .accordion .accordion-header .icon {
+    font-size: var(--heading-font-size-xs);
+  }
+
+  .accordion .accordion-content {
+    font-size: var(--body-font-size-xs);
+  }
+}

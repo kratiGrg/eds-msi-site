@@ -1,0 +1,98 @@
+.related-articles {
+  font-family: var(--body-font-family);
+  color: var(--text-color);
+}
+
+.related-articles .accordion {
+  border: 1px solid var(--light-color);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.related-articles .accordion-item {
+  border-bottom: 1px solid var(--light-color);
+}
+
+.related-articles .accordion-item:last-child {
+  border-bottom: none;
+}
+
+.related-articles .accordion-header {
+  font-size: var(--heading-font-size-s);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  background-color: var(--light-color);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: #171c8f; /* Change color to #171c8f */
+}
+
+.related-articles .accordion-button {
+  background: none;
+  border: none;
+  font-size: var(--heading-font-size-s);
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: inherit; /* Inherit color from accordion-header */
+}
+
+.related-articles .accordion-button::after {
+  content: '+';
+  font-size: 1.5rem;
+}
+
+.related-articles .accordion-item[aria-expanded="true"] .accordion-button::after {
+  content: '-';
+}
+
+.related-articles .accordion-content {
+  padding: 16px;
+  display: none;
+}
+
+.related-articles .accordion-item[aria-expanded="true"] .accordion-content {
+  display: block;
+}
+
+.related-articles img {
+  max-width: 100%;
+  height: auto;
+}
+
+.related-articles p {
+  margin: 0 0 10px;
+}
+
+.related-articles .read-more {
+  color: var(--link-color);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.related-articles .read-more:hover {
+  color: var(--link-hover-color);
+  text-decoration: underline;
+}
+
+.related-articles .date {
+  font-size: var(--body-font-size-xs);
+  color: var(--dark-color);
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .related-articles .accordion-header {
+    font-size: var(--heading-font-size-xs);
+  }
+
+  .related-articles .accordion-button {
+    font-size: var(--heading-font-size-xs);
+  }
+}
